@@ -1,0 +1,7 @@
+TKN_TLG = '111111111:AABOV9kOO_as3NaW7hzgmXB23fINHP-M'  # Your Telegram Bot token. https://t.me/BotFather
+TW_CHAN = 'olyashaa'  # Twitch channel you want to monitor
+CHATTERS_URL = 'https://tmi.twitch.tv/group/user/%s/chatters' % TW_CHAN  # This is where we get chat list users
+TLG_ID_WMW = 1231344077  # Get your telegram ID here https://t.me/myidbot
+
+# List of twitch streamers to catch em
+usr_lst = ['sharishaxd', 'olyashaa', 'jesusavgn']
