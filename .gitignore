@@ -4,6 +4,7 @@ cfg.py
 .env
 .venv
 env/
+.idea/
 venv/
 ENV/
 env.bak/
