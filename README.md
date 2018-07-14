@@ -4,7 +4,7 @@ Catch popular streamers visiting your twitch channel and notifying you via Teleg
 
 ### Prerequisites
 
-Since you need it running 24/7, I recommend using * [Supervisord](http://supervisord.org/)
+Since you need it running 24/7, I recommend using [Supervisord](http://supervisord.org/)
 
 ### Installing
 
@@ -22,7 +22,7 @@ Rename cfg.py.sample to cfg.py
 
 Edit cfg.py by putting your own TOKENs and API keys there
 
-Since this bot uses Telegram to notify you, create your own here * [t.me/BotFather](https://t.me/BotFather)
+Since this bot uses Telegram to notify you, create your own here [t.me/BotFather](https://t.me/BotFather)
 
 Now install required python packages by running
 
@@ -39,11 +39,11 @@ Ready, steady, go
 ## Built With
 
 * [Requests](http://docs.python-requests.org/en/master/) — Python HTTP for Humans.
-* [Arrow](http://arrow.readthedocs.io/en/latest/) - Better dates and times for Python
+* [Arrow](http://arrow.readthedocs.io/en/latest/) — Better dates and times for Python
 
 ## Authors
 
-* **Ivan wmw** - [t.me/wmwofficial](https://t.me/wmwofficial)
+* **Ivan wmw** — [t.me/wmwofficial](https://t.me/wmwofficial)
 
 ## License
 
