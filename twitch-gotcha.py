@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # VAS ZAMETILI Kappa
-# Catches an user visiting your twitch channel and notifying you via Telegram.
+# Catches twitch users visiting your twitch channel and notifying you via Telegram.
 
 import json
 import time
@@ -68,9 +68,9 @@ def loop_check():
                 t = arrow.get(usr_watching.get(s))
                 notify_logoff(tlg_id=cfg.TLG_ID_WMW, tw_chan=cfg.TW_CHAN, usr=s, time=t)
                 usr_watching.pop(s, None)
-        # print('catch: ' + str(catch))
-        # print('usr_watching:' + str(usr_watching))
-        # print('\n')
+        print('catch: ' + str(catch))
+        print('usr_watching:' + str(usr_watching))
+        print('\n')
         not_first_run = True
         time.sleep(60)
 
