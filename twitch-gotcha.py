@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # VAS ZAMETILI Kappa
-# Catches twitch users visiting your twitch channel and notifying you via Telegram.
+# Sends you a notification via Telegram when a popular streamer visits your twitch channel.
 
 import json
 import time
@@ -22,6 +22,7 @@ def notify_login(tlg_id, tw_chan, usr):
     data = {'chat_id': tlg_id, 'text': text, 'parse_mode': 'HTML', 'disable_web_page_preview': True}
     try:
         r = requests.post(url + 'sendMessage', data=data)
+        time.sleep(2)
     except Exception as error:
         print('Something went wrong...')
         print(str(error))
@@ -40,6 +41,7 @@ def notify_logoff(tlg_id, tw_chan, usr, time):
             'disable_notification': True}
     try:
         r = requests.post(url + 'sendMessage', data=data)
+        time.sleep(2)
     except Exception as error:
         print('Something went wrong...')
         print(str(error))
@@ -67,6 +69,7 @@ def loop_check():
                 print('user logged off, notify and remove from usr_watching')
                 t = arrow.get(usr_watching.get(s))
                 notify_logoff(tlg_id=cfg.TLG_ID_WMW, tw_chan=cfg.TW_CHAN, usr=s, time=t)
+                notify_logoff(tlg_id=cfg.TLG_ID_1, tw_chan=cfg.TW_CHAN, usr=s, time=t)
                 usr_watching.pop(s, None)
         print('catch: ' + str(catch))
         print('usr_watching:' + str(usr_watching))
