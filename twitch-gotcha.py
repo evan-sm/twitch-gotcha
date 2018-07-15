@@ -72,7 +72,7 @@ def loop_check():
         # print('usr_watching:' + str(usr_watching))
         # print('\n')
         not_first_run = True
-        time.sleep(10)
+        time.sleep(60)
 
 print('Ok, working')
 usr_watching = {}
