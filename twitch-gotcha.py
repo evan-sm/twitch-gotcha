@@ -64,12 +64,13 @@ def loop_check():
                     usr_watching.update({s: time.time()})
                     if not_first_run:
                         notify_login(tlg_id=cfg.TLG_ID_WMW, tw_chan=cfg.TW_CHAN, usr=s)
+                        notify_login(tlg_id=cfg.TLG_ID_2, tw_chan=cfg.TW_CHAN, usr=s)
         for s in usr_watching.copy():
             if s not in catch:
                 print('user logged off, notify and remove from usr_watching')
                 t = arrow.get(usr_watching.get(s))
                 notify_logoff(tlg_id=cfg.TLG_ID_WMW, tw_chan=cfg.TW_CHAN, usr=s, time=t)
-                notify_logoff(tlg_id=cfg.TLG_ID_1, tw_chan=cfg.TW_CHAN, usr=s, time=t)
+                notify_logoff(tlg_id=cfg.TLG_ID_2, tw_chan=cfg.TW_CHAN, usr=s, time=t)
                 usr_watching.pop(s, None)
         print('catch: ' + str(catch))
         print('usr_watching:' + str(usr_watching))
