@@ -11,7 +11,7 @@ import cfg
 def get_chatters():
     r = requests.get(cfg.CHATTERS_URL)
     js = json.loads(r.text)
-    chat_lst = js['chatters']['moderators'] + js['chatters']['viewers']
+    chat_lst = js['chatters']['moderators'] + js['chatters']['viewers'] js['chatters']['vips']
     return chat_lst
 
 
