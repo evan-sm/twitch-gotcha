@@ -35,6 +35,10 @@ Ready, steady, go
 ```
 # python3 twitch-gotcha.py
 ```
+Or you can use Docker
+```
+# docker-compose up -d --build
+```
 
 ## Built With
 
