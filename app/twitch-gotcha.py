@@ -72,9 +72,9 @@ def loop_check():
                 notify_logoff(tlg_id=cfg.TLG_ID_WMW, tw_chan=cfg.TW_CHAN, usr=s, time=t)
                 notify_logoff(tlg_id=cfg.TLG_ID_2, tw_chan=cfg.TW_CHAN, usr=s, time=t)
                 usr_watching.pop(s, None)
-        print('catch: ' + str(catch))
-        print('usr_watching:' + str(usr_watching))
-        print('\n')
+        #print('catch: ' + str(catch))
+        #print('usr_watching:' + str(usr_watching))
+        #print('\n')
         not_first_run = True
         time.sleep(60)
 
