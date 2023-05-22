@@ -1,2 +1,2 @@
 arrow==0.12.1
-requests==2.20.1
+requests==2.31.0
